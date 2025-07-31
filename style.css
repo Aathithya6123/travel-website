@@ -37,12 +37,14 @@ body {
 }
 .nav-links a:hover {
   text-decoration: underline;
+  color: #383333;
 }
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
+  shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .hero {
   background: url("https://i.pinimg.com/736x/6f/c4/09/6fc409bdf41015807ed2dd09b3458328.jpg")
@@ -123,6 +125,8 @@ body {
   margin-bottom: 10px;
   padding: 1px;
   background-image: url(images/content.avif);
+  transition:transform 0.5s ease;
+  shape-image-threshold: 20px;
 }
 #packages {
   display: flex;
@@ -140,6 +144,8 @@ body {
   max-width: 90%;
   height: auto;
   border-radius: 6px;
+  transition: transform 0.5s ease;
+  box-shadow: #555;
 }
 .content {
   flex: 1;
@@ -162,7 +168,13 @@ body {
   height: auto;
   border-radius: 5px;
   margin-top: 5rem;
+  box-shadow: #8d3d3d;
 }
+.content img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 .card i {
   font-size: 2rem;
   color: #007bff;
@@ -181,6 +193,12 @@ body {
   color: rgb(0, 0, 0);
   align-content: center;
 }
+.box p{
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
 
 .box {
   color: #000000;
@@ -191,6 +209,7 @@ body {
   text-align: center;
   padding: 10px;
   border-radius: 10px;
+  box-shadow: #383333 0px 0px 10px;
 }
 .box:hover {
   background-color: #007bff;
